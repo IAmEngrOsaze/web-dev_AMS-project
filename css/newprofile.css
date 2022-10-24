@@ -177,7 +177,8 @@ main{
 
 @media only screen and (max-width: 600px){
     .menu{
-        visibility:visible
+        visibility:visible;
+        margin-top: 5px;
     }
     ul{
         visibility: hidden ;
@@ -187,7 +188,7 @@ main{
         visibility:visible;
     }
     .clock{
-        margin: 80% 10px 0 10px;
+       visibility: hidden;
       }
       .header .first, .header .second{
         display: flex;
@@ -195,5 +196,20 @@ main{
         gap: 8px;
         align-items: center; 
         font-size: 0.9rem;
+    }
+
+    .header .first{
+        margin-left: 80px;
+    }
+
+    .sidebar{
+        background-color: transparent;
+    }
+    .main{
+        width: 100%;
+        margin:0;
+    }
+    .logo{
+        margin: 25px 20px;
     }
 }
