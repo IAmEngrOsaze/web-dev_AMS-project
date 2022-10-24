@@ -1,0 +1,31 @@
+/********** ** THIS WILL BE THE GENERAL COLOR TEMPLATE FOR THE WHOLE PROJECT **  **********/
+/*:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-clr: hsl(215, 32%, 27%);
+}*/
+
+
+/********** ** GENERAL STYLES FOR THE HTML AND BODY TAGS **  **********/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--main-bg);
+  font-family: "Bodoni Moda", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
