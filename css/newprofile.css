@@ -24,7 +24,7 @@ body{
     position: relative;
 }
 /* sidebar */
-.home-container .sidebar{
+.sidebar{
     position: fixed;
     width: 250px ;
     height: 100%;
@@ -77,18 +77,22 @@ li a:active{
     visibility: hidden;
     margin: 0 25px;
     background-color: transparent;
+    color: rgb(2, 30, 69);
   }
 
   /* main content */
  .main{
     width: 100%;
     margin-left:20px;
+    z-index: -1;
 }
 .header{
     display: flex;
     justify-content: space-between;
+    align-content: center;
     align-items: center;
     height: 60px;
+    padding-bottom: 25px;
 }
 .header .first, .header .second{
     display: flex;
@@ -113,7 +117,7 @@ li a:active{
     border: 1.5px solid rgb(2, 30, 69);
 } 
 .header-line{
-    height:1px;
+    height:1.5px;
     background-color: rgba(2, 30, 69, 0.8);
     border:  rgba(2, 30, 69, 0.8);
 }
@@ -124,61 +128,136 @@ main{
     background-color: rgb(229, 228, 226);
     border-radius: 25px 0 0 0;
     position:relative;
-    padding: 16px;
+    padding: 12px;
 }
 
 .container{
     position: absolute;
-    top:50%;
+    top:40%;
     left:50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -50%);
     background-color: rgb(240, 245, 250);
+    width: 70%;
+    height: auto;
+    border-radius: 25px;
 }
 
-.container .grid{
+.container h5{
+    padding: 20px;
+}
+
+.grid{
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: auto, auto, auto;
-    gap:10px;
+    gap: 30px;
     background-color: rgb(240, 245, 250);
+    height: 70%;
+    width: 80%;
+    padding: 10px 0;
 }
 .grid .user-pic{
     grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 10px;
 }
 
 .grid .form1{
     grid-column: 2 / 3;
+    padding:0 10px;
 }
 
 .grid .form2{
     grid-column: 3 / 4;
+    padding:0 10px;
 }
-.image{
+
+/* form */
+.form-container{
+    padding: 15px 10px;
+}
+input, select{
+    width:100%;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid rgb(2, 30, 69)
+}
+
+div{
+    margin: 8px auto 0 auto;
+}
+
+input[type=submit]{
+    margin: 12px auto;
+    width: 50%;
+    font-size: 1.1rem;
+    background-color: rgb(1, 82, 213);
+    padding: 6px 8px;
+    display: flex;
+    justify-content: center;
+    color:rgb(240, 245, 250);
+    font-weight: bolder;
+    cursor:pointer;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(2, 30, 69);
+}
+
+/* rgb(0, 196, 246); */
+
+textarea{
+    width: 100%;
+    word-break: keep-all;
+    border-radius: 5px;
+    border: 1px solid rgb(2, 30, 69)
+}
+
+/* .image{
     border:none;
     border-radius: 50%;
     padding: 30px;
     background-color: rgb(229, 228, 226);
 }
-.user-pic img{
-    width: 60px;
-    height: 60px;
+
+
+ */
+ .wrapper {
+    display: flex;
+    justify-content: center;
+    border:none;
     border-radius: 50%;
+    padding: 35px;
+    background-color: rgb(229, 228, 226);
+}
+
+ .content {
     position: relative;
+    width: 70px;
+    
 }
 
-.user-pic img span{
+ .content img {
+    display: block;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border:1px solid rgb(2, 30, 69);
+
+}
+ .content .fa-download {
     position: absolute;
-}
-
-
-
-
+    bottom:0;
+    right:0; }
 
 
 @media only screen and (max-width: 600px){
     .menu{
         visibility:visible;
-        margin-top: 5px;
+        margin: 5px 0 0 10px;
     }
     ul{
         visibility: hidden ;
