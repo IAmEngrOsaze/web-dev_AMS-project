@@ -28,11 +28,10 @@ body{
     width: 250px ;
     height: 100%;
 }
-/* to be replaced with actual logo */
 .logo{
-    font-size: 12px;
-    margin: 30px 20px;
-    font-weight: bolder;
+   width: 70px;
+    margin: 20px 20px;
+    cursor: pointer;
 }
 ul{
     margin: 0 25px;
@@ -439,6 +438,7 @@ input[type=search]{
         margin:0;
     }
     .logo{
-        margin: 25px 20px;
+        width:60px;
+        margin: 20px 10px;
     }
 }

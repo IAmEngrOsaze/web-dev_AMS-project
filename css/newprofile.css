@@ -29,11 +29,10 @@ body{
     width: 250px ;
     height: 100%;
 }
-/* to be replaced with actual logo */
 .logo{
-    font-size: 12px;
-    margin: 30px 20px;
-    font-weight: bolder;
+    width: 70px;
+    margin: 20px 20px;
+    cursor: pointer;
 }
 ul{
     margin: 0 20px;
@@ -269,7 +268,6 @@ textarea{
 @media only screen and (max-width: 768px){
 *{
      overflow-y:visible;
-     height: fit-content;
 }
 header{
     overflow: hidden;
@@ -293,7 +291,7 @@ header{
     grid-row: 3 / 4;
 }
 .container{
-    height: fit-content;
+    height: auto;
     margin-top: 35%
 }
 .wrapper {
@@ -343,6 +341,7 @@ header{
     }
 
     .logo{
-        margin: 25px 10px;
+        width: 60px;
+        margin: 20px 10px;
     }
 }
