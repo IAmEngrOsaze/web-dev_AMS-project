@@ -12,8 +12,8 @@
     <div class="home-container">
         <div class="sidebar">
            <a href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
-            <button class="menu"><i class="fas fa-bars"></i></button>
             <ul class="navbar">
+                <button class="menu"><i class="fas fa-bars"></i></button>
                 <li class="links"><a href="index.html" ><i class="fas fa-home-alt"></i></a><span class="tooltip">Home</span></li>
                 <li class="links"><a href="newprofile.html"><i class="fas fa-user-plus"></i></a><span class="tooltip">Add Student</span></li>
                 <li class="links"><a href="#"><i class="fas fa-users"></i></a><span class="tooltip">Students</span></li>
@@ -54,6 +54,7 @@
 
             </div>
             </header>
+            
 
             <main>
                 <h5>Dashboard/Add a new Profile</h5>
@@ -81,6 +82,17 @@
                             </div>
 
                             <div>
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="" id="" required>
+                             </div>
+
+                             <div>
+                                <label for="tel">Telephone</label>
+                                <input type="tel" name="" id="">
+                             </div>
+
+
+                            <div>
                                 <label for="email">Email</label>
                                 <input type="email" name="" id="" required>
                              </div>
@@ -91,54 +103,45 @@
                              </div>
 
                              <div>
-                               <label for="state">State</label>
-                               <input type="text" name="" id="">
-                             </div>
-                             
-                             <div>
-                                <label for="program">Program</label>
-                                       <select id="programs" name="">
-                                       <option value="Design">Design</option>
-                                       <option value="WebDev">Web Development</option>
-                                       <option value="DataAnalytics">Data Analytics</option>
-                                       <option value="DigitalMarketing">Digital Marketing</option>
+                                <label for="Gender">Gender</label>
+                                <br>
+                                       <select id="gender" name="">
+                                       <option value="Male">Male</option>
+                                       <option value="Female">Female</option>
+                                       <option value="none">Prefer not to say </option>
                                        </select>
-                                </div>
-
-                             <div>
-                                <label for="address">Home Address</label>
-                                <textarea name="" id="" cols="25" rows="2"></textarea>
-                             </div>
+                                    </div>
 
                         </div>
                     </div>
 
                         <div class="form2">
                             <div class="form-container">
-                            <div>
-                                <label for="lastName">Last Name</label>
-                                <input type="text" name="" id="" required>
-                             </div>
 
-                             <div>
-                                <label for="tel">Telephone</label>
-                                <input type="tel" name="" id="">
-                             </div>
-
-                             <div>
-                             <label for="Gender">Gender</label>
-                             <br>
-                                    <select id="gender" name="">
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="none">Prefer not to say </option>
-                                    </select>
-                                </div>
+                                <div>
+                                    <label for="address">Home Address</label>
+                                    <textarea name="" id="" cols="25" rows="2"></textarea>
+                                 </div>
 
                                 <div>
                                     <label for="lga">L.G.A</label>
                                     <input type="text" name="" id="">
                                   </div>
+                                  
+                             <div>
+                                <label for="state">State</label>
+                                <input type="text" name="" id="">
+                              </div>
+
+                                  <div>
+                                    <label for="program">Program</label>
+                                           <select id="programs" name="">
+                                           <option value="Design">Design</option>
+                                           <option value="WebDev">Web Development</option>
+                                           <option value="DataAnalytics">Data Analytics</option>
+                                           <option value="DigitalMarketing">Digital Marketing</option>
+                                           </select>
+                                    </div>
 
                                     <div>
                                         <label for="department">Department</label>

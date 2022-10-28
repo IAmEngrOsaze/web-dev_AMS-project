@@ -30,8 +30,8 @@ body{
     height: 100%;
 }
 .logo{
-    width: 70px;
-    margin: 20px 20px;
+    width: 60px;
+    margin: 15px;
     cursor: pointer;
 }
 ul{
@@ -75,7 +75,6 @@ li a:active{
     border:none;
     font-size: 30px;
     visibility: hidden;
-    margin: 0 25px;
     background-color: transparent;
     color: rgb(2, 30, 69);
   }
@@ -267,7 +266,7 @@ textarea{
 
 @media only screen and (max-width: 768px){
 *{
-     overflow-y:visible;
+     overflow-y:hidden;
 }
 header{
     overflow: hidden;
@@ -294,8 +293,19 @@ header{
     height: auto;
     margin-top: 35%
 }
+main{
+    overflow-y: scroll;
+}
+
 .wrapper {
     margin-top: 0;
+}
+main h5{
+    visibility: hidden;
+}
+
+.container h5{
+    visibility: inherit;
 }
 }
 
@@ -303,11 +313,13 @@ header{
 @media only screen and (max-width: 600px){
     .menu{
         visibility:visible;
-        margin: 5px 0 0 10px;
+        margin: 30px 0 0 0;
+        z-index: 1;
     }
     ul{
         visibility: hidden ;
         transition: 0.3s;
+        margin: 0 35px
     }
     .show-links{
         visibility:visible;
@@ -328,17 +340,21 @@ header{
     }
 
     .sidebar{
-        background-color: none;
+        background-color:transparent;
+        z-index: 1;
     }
-    .main{
+    main{
         width: 100%;
         margin:0;
+        overflow: scroll;
     }
-
+   
     .container{
         height: auto;
-        margin-top: 50%
+        margin-top: 50%;
+        z-index: 1;
     }
+
 
     .logo{
         width: 60px;
