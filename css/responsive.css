@@ -1,0 +1,62 @@
+@media screen and (min-width: 700px) {
+    header {
+        height: 80px;
+    }
+
+    .nav-brand {
+        width: 35px;
+    }
+
+    .nav-list {
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+        box-shadow: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-item {
+        margin: 0 20px;
+    }
+
+    .nav-link,
+    .current {
+        color: var(--white);
+        position: relative;
+        font-size: 15px;
+    }
+
+    .nav-link:hover {
+        color: var(--white);
+    }
+
+    .nav-link::before,
+    .current::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: var(--primary);
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 350ms;
+    }
+
+    .current::before {
+        transform: scaleX(1);
+    }
+
+    .nav-link:hover::before {
+        transform: scaleX(1);
+    }
+}
