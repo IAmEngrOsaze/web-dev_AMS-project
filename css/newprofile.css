@@ -28,6 +28,7 @@ body{
     position: fixed;
     width: 250px ;
     height: 100%;
+    z-index: 1;
 }
 .logo{
     width: 60px;
@@ -138,6 +139,7 @@ main{
     width: 70%;
     height: fit-content;
     border-radius: 25px;
+    z-index: 1;
 }
 
 .container h5{
