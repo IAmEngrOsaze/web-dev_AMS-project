@@ -1,0 +1,79 @@
+@media only screen and (max-width: 600px) {
+
+  .container {
+      margin: auto;
+      width: 80%;
+      /* padding: 0 5%; */
+  }
+
+  .plans{
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  p {
+    /* text-align: center; */
+    font-size: 1.15rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  nav .container {
+    display: flex;
+  }
+
+
+
+  .card {
+    margin: auto;
+    /* padding: auto 3rem; */
+    width: 80%;
+    /* border-style: solid; */
+    border-radius: 1rem;
+  }
+
+  /* .card .container {
+    padding: ;
+  }
+
+  .card ul {
+    margin-left: 1rem;
+  } */
+
+  .adverts {
+    width: 85%;
+    margin: 3rem auto;
+    text-align: center;
+
+  }
+
+
+ 
+  nav {
+    flex-direction: column;
+  }
+
+  .banner {
+    text-align: center;
+  }
+  
+  .get-started {
+    margin: 1.75rem;
+  }
+
+  /* ul + button.choose-plan {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  } */
+
+  img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+  }
+}

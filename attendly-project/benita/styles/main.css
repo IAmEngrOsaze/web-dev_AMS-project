@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Averta CY;
+    src: url(/font-families/averta/AvertaDemoPECuttedDemo-Regular.otf);
+}
+
+:root {
+    --blue: #0152D5;
+    --lightBlue: #00C4F6;
+    --darkBlue: #021E45;
+    --grey: #D3D3D3;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Averta CY', sans-serif;
+}
+
+/* body {
+    background-color: aqua;
+} */
+
+/* nav {
+    display: flex;
+    gap: 30em;
+    padding: 2em;
+} */
+
+h1{
+    font-size: 4rem;
+    padding: 0.25em;
+
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h3 > small {
+    font-size: 0.5em;
+    margin-left: 0.75rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family:'Fira Sans', serif;
+    margin: 1em;
+}
+
+p,
+li{
+    /* font-family:'Bodoni Moda', serif; */
+    font-size: 1.25rem;
+    /* list-style-type: none; */
+}
+
+header {
+    /* display: flex; */
+}
+
+.attendly-logo {
+    width: 7.5rem;
+}
+
+.container {
+    margin: auto 4rem;
+}
+
+.everything {
+    padding:0  1.75%;
+}
+
+.blue-line {
+    /* the styles for the blue line go in here */
+    background-color: var(--blue);
+    width: 3rem;
+    height: 0.25em;
+    border-radius: 1rem;
+    margin-left: 2rem;
+
+}
+
+.learn-more {
+    text-decoration: none;
+    /* margin: 1rem; */
+}
+
+.logo-item{
+    /* styles for the various items on the navbar */
+    /* margin-left: 2.75em; */
+    text-decoration: none;
+}
+
+.get-started{
+    /* these are the styles for the get started button */
+    padding: 0.5em 0.75em;
+    border-radius: 1em;
+    border-style: none;
+    font-size: 1rem;
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.choose-plan{
+    /* these are the styles for the Choose Plan button */
+    display: block;
+    padding: 0.5em 0.5em;
+    border-radius: 1em;
+    border-style: none;
+    font-size: 1rem;
+    background-color: var(--blue);
+    color:#fff;
+    margin: 1.5rem 2.5rem;
+    width: 50%;
+}
+
+.plans{
+    display: flex;
+    gap: 5rem;
+}
+
+
+
+.container > h4 {
+    font-size: 1em;
+    font-weight: 700;
+    background-color: var(--grey);
+    padding: 0.25em;
+    /* margin-right: 0; */
+    text-align: center;
+    border-radius: 0.75rem ;
+    width: 40%;
+}
+
+.card p {
+    margin-bottom: 3rem;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* stuff I cut from the media queries CSS file */
+.card .container {
+    padding: 0.125rem 1rem;
+  }
+
+  small.time-period {
+    margin-left: 0.5rem;
+    font-size: 0.5em;
+  }
+
+  .card:hover {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card {
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 1rem;
+  }
+
+  /* .plans h4 {
+    text-align: center;
+  } */
