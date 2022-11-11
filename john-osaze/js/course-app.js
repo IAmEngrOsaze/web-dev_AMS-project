@@ -37,7 +37,7 @@ function alertFunc() {
 					icon: "success",
 					button: "Continue",
 				});
-				const singleCard = `<a href="dashboard.html">
+				const singleCard = `<a href="../benita_michael/index.html">
                 <div class="mono-card">
                     <h2>${value}</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
