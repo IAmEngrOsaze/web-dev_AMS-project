@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: "Averta CY", sans-serif;
+      src: url(./fonts/AvertaDemoPE-ExtraBold.otf);
+    }
+
+    @font-face {
+      font-family: "Bodoni Moda", sans-serif;
+      src: url(./fonts/BodoniModa_9pt-BlackItalic.ttf);
+    }
+
+    body {
+      background-color: #021e45;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      margin-top: 6rem;
+    }
+
+    .label {
+      color: white;
+    }
+
+    header {
+      margin-top: 2rem;
+      font-family: "Bodoni Moda", sans-serif;
+      src: url(./fonts/BodoniModa_9pt-BlackItalic.ttf);
+      font-size: 4.5rem;
+      color: white;
+      margin-left: 1.5rem;
+    }
+
+    .input {
+      width: 35rem;
+      height: 3rem;
+      border: 1px solid #021e45;
+      border-radius: 0.3rem;
+      margin-top: 1.5rem;
+      font-family: "Averta CY", sans-serif;
+      src: url(./fonts/AvertaDemoPE-ExtraBold.otf);
+    }
+
+    a#forgot {
+      display: flex;
+      justify-content: right;
+      margin-top: 0.6rem;
+      text-decoration: none;
+      color: #0152d5;
+    }
+
+    a#forgot:hover {
+      color: white;
+    }
+
+    .sign_in {
+      color: white;
+      background-color: #0152d5;
+      font-size: large;
+      margin-top: 3rem;
+    }
+
+    .email {
+      margin-bottom: 1.5rem;
+      font-family: "Averta CY", sans-serif;
+      src: url(./fonts/AvertaDemoPE-ExtraBold.otf);
+      padding-left: 2rem;
+    }
+
+    .password {
+      font-family: "Averta CY", sans-serif;
+      src: url(./fonts/AvertaDemoPE-ExtraBold.otf);
+      padding-left: 2rem;
+    }
+
+    @media (max-width: 590px) {
+      .input {
+        width: 18rem;
+        height: 3rem;
+        border: 1px solid #021e45;
+        border-radius: 0.3rem;
+        margin-top: 1.5rem;
+        font-family: "Averta CY", sans-serif;
+        src: url(./fonts/AvertaDemoPE-ExtraBold.otf);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html" style="text-decoration: none; color: white;"><span>Attendly</span></a>
+  </header>
+  <section>
+    <form action="../john-osaze/create-school.html">
+      <div>
+        <label class="label">Email</label> <br />
+        <input type="email" name="email" class="input email" placeholder="Enter email address" />
+      </div>
+      <div>
+        <label class="label">Password</label> <br />
+        <input type="password" name="password" class="input password" placeholder="Enter password" />
+      </div>
+
+      <input type="submit" value="Sign In" class="input sign_in" />
+      <a href="#" id="forgot">Forgot Password?</a>
+    </form>
+  </section>
+</body>
+
+</html>
