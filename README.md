@@ -1,4 +1,6 @@
-# web-dev_AMS-project
+# web-dev_AMS-project (Attendly)
+
+![attendly-logo](https://user-images.githubusercontent.com/87905476/216726241-6db7ae7b-a949-4471-ad03-35c4b7f8caa4.png)
 
 ## Project Overview
 This project was built as final submission for the capstone project issued to us in our 3 months web development training at the [Edo Innovation Hub](https://edoinnovates.com). The project was officially named "Attendly" and was built by a group of developers.
