@@ -1,9 +1,10 @@
 let fullDate = document.getElementById("fulldate");
 
-//date
+//Creating the date functionality
 let today = new Date(); 
 let day = `${today.getDate() <10?"0": ""} ${today.getDate()}`;
-//month
+
+//Calculate for the month
 let month = `${(today.getMonth()+ 1)< 10? "0": ""} ${today.getMonth() + 1}`;
 
 let year = today.getFullYear();
@@ -11,7 +12,7 @@ let year = today.getFullYear();
 fullDate.textContent = `${day}/${month}/${year}`;
 
 
-//time
+//Check the time
 class DigitalClock {
     constructor(element){
         this.element = element;
@@ -50,7 +51,7 @@ const clockObj = new DigitalClock(clockElement);
 
 clockObj.start();
 
-//menu
+//Switch the menu when clicked
 const menu = document.querySelector(".menu")
 const navBar = document.querySelector(".navbar");
 
